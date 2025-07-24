@@ -1,6 +1,6 @@
 # tests/test_decompositions.py
 import numpy as np
-from numlinalg.decompositions import lu_decomposition, cholesky_decomposition, qr_decomposition, svd_decomposition
+from src.DIY_NLA.decompositions import lu_decomposition, cholesky_decomposition, qr_decomposition, svd_decomposition
 
 def test_lu_decomposition():
     A = np.array([[4, 3], [6, 3]])

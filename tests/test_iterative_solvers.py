@@ -1,10 +1,22 @@
 # tests/test_iterative_solvers.py
 import numpy as np
-from numlinalg.iterative_solvers import conjugate_gradient
+import pytest
+from src.DIY_NLA.iterative_solvers import conjugate_gradient
 
-def test_conjugate_gradient():
-    # Positive definite matrix
-    A = np.array([[4, 1], [1, 3]])
-    b = np.array([1, 2])
-    x = conjugate_gradient(A, b)
+
+
+def test_conjugate_gradient_larger():
+    # Generate larger SPD matrix
+    np.random.seed(42)
+    B = np.random.rand(10, 10)
+    A = B.T @ B + np.eye(10)  # Make SPD
+    x_true = np.random.rand(10)
+    b = A @ x_true
+    
+    # Solve with CG
+    x = conjugate_gradient(A, b, max_iter=100, tol=1e-8)
+    
+    # Verify solution accuracy
     assert np.allclose(A @ x, b, atol=1e-6)
+    assert np.allclose(x, x_true, atol=1e-4)
+

@@ -1,7 +1,7 @@
 # tests/test_basic_ops.py
 import numpy as np
 import pytest
-from numlinalg.basic_ops import dot_product, matrix_multiply, vector_norm, matrix_norm
+from src.DIY_NLA.basic_ops import dot_product, matrix_multiply, vector_norm, matrix_norm
 
 def test_dot_product():
     v1 = np.array([1, 2, 3])

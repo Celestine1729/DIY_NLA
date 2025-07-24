@@ -1,6 +1,6 @@
 # tests/test_direct_solvers.py
 import numpy as np
-from numlinalg.direct_solvers import solve_lu, solve_cholesky
+from src.DIY_NLA.direct_solvers import solve_lu, solve_cholesky
 
 def test_solve_lu():
     A = np.array([[3, 2], [1, 2]])
