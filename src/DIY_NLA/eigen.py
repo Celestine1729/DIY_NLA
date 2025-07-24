@@ -1,3 +1,5 @@
+import numpy as np
+
 def power_iteration(A, max_iter=1000, tol=1e-10):
     v = np.random.rand(A.shape[0])
     for _ in range(max_iter):

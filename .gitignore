@@ -1,0 +1,4 @@
+tests/__pycache__/test_eigen.cpython-313-pytest-8.4.1.pyc
+*.pyc
+.coverage
+/.vscode
