@@ -1,2 +1,2 @@
-# DIY_NLA
-DIY Python Package for Numerical Linear Algebra
+# DNLAP
+DIY Numerical Linear Algebra Package
