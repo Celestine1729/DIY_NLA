@@ -1,5 +1,5 @@
 import numpy as np
-from src.DIY_NLA.decompositions import lu_decomposition , cholesky_decomposition
+from DNLAP.decompositions import lu_decomposition , cholesky_decomposition
 
 def solve_lu(A, b):
     P, L, U = lu_decomposition(A)
