@@ -1,6 +1,6 @@
 # tests/test_eigen.py
 import numpy as np
-from src.DIY_NLA.eigen import power_iteration
+from DNLAP.eigen import power_iteration
 
 def test_power_iteration():
     A = np.array([[2, 1], [1, 2]])

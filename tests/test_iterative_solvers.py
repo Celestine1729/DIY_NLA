@@ -1,7 +1,7 @@
 # tests/test_iterative_solvers.py
 import numpy as np
 import pytest
-from src.DIY_NLA.iterative_solvers import conjugate_gradient
+from DNLAP.iterative_solvers import conjugate_gradient
 
 
 
